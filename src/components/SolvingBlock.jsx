@@ -116,7 +116,6 @@ export default class SolvingBlock extends Component {
                             First Root:&nbsp;
                             <span id="root1">{this.state.firstRoot}</span>
                         </span>
-                        <br />
                         <span>
                             Second Root:&nbsp;
                             <span id="root2">{this.state.secondRoot}</span>
