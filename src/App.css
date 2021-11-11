@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+    width: 100vw;
+    height: 2rem;
+    align-self: center;
+    padding: 0.5rem 0rem;
+    line-height: 1rem;
+    font-size: 0.93rem;
+    background-color: rgb(246, 224, 94);
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header > span > a:link,
+#header > span > a:visited,
+#header > span > a:hover,
+#header > span > a:active,
+#header > span > a:focus {
+    cursor: pointer;
+    text-decoration-line: dotted;
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#inputs {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 1.5rem;
+    width: 5rem;
+    padding: 0.2rem;
+    margin: 0.2rem 0.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2rem);
+    width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#block {
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+#block > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#equation {
+    font-style: italic;
+    color: #444;
+}
+
+#value-inputs {
+    flex-direction: column;
+}
+
+/* #btn-div {
+} */
+
+#output {
+    flex-direction: column;
+}
+
+#btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.1rem 0.5rem;
+}
+
+#container-head {
+    height: 20%;
 }
